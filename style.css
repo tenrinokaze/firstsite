@@ -48,8 +48,5 @@ body {
     background-color: #737373;
   }
   .carousel-inner{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
     height: 280px;
   }
