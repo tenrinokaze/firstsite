@@ -12,6 +12,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 16px;
+  top: 13px;
   background-color: white;
   }
   .label {
@@ -48,5 +49,5 @@ body {
     background-color: #737373;
   }
   .carousel-inner{
-    height: 280px;
+    height: 250px;
   }
