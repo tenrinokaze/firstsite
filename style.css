@@ -2,6 +2,46 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   background-color: #f0efee;
   }
+  .heading{
+    width: 303px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.wellbeing {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #737373;
+  }
+  span.marker {
+    color: #2553c9;
+    font-weight: bold;
+    background: linear-gradient(transparent 50%, rgba(255, 246, 110,0.8) 50%);
+    padding-bottom: 0.3em;
+  }
+    
+  .marker{
+    
+    /* マーカーを引く
+    rgba(255, 153, 0,0.5) の部分はマーカーの色を指定しています。
+    実装される際は、お好きな色、透明度をお入れ下さい。 */
+    background:linear-gradient(transparent 50%, rgba(255, 246, 110,0.5) 50%); /* マーカーを引く */
+    /* インライン属性を指定する */
+    display: inline;
+    /* 背景の繰り返しを停止 */
+    background-repeat: no-repeat;
+    /* マーカーの横方向を0にして縮める */
+    background-size: 0% 100%;
+    /* マーカーが引かれる速度を指定 */
+    transition: marker 1.5s;
+    }
+    /* マーカーが引かれる際に付与するクラス */
+    .marker.on {
+    /* 横方向を100%にして、マーカーを引く */
+    background-size: 100% 100%;
+  }
   .box {
   width: 303px;
   height: 192px;
@@ -12,7 +52,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 16px;
-  top: 13px;
+  margin-top: 30px;
   background-color: white;
   }
   .label {
@@ -43,5 +83,5 @@ body {
     background-color: #737373;
   }
   .carousel-inner{
-    height: 250px;
+    height: 280px;
   }
